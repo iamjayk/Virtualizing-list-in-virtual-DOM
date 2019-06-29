@@ -10,7 +10,6 @@ const Row = ({ index, style, data, isScrolling }): Element<*> => {
 		alignItems: 'center',
 	};
 	const imgStyle = { borderRadius: '25px' };
-	console.log('rendering row ', isScrolling);
 	return (
 		<div style={extStyle} key={data[index].id}>
 			{isScrolling ? (
