@@ -1,0 +1,57 @@
+{
+  "name": "virtualized-list",
+  "version": "0.0.1",
+  "description": "A virtualized list component in React virtual dom. Based on Brian vaughn's react-window.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.35.0",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack",
+    "serve": "http-server ./dist"
+  },
+  "author": {
+    "name": "as1anh4wk",
+    "email": "ajay8293@gmail.com"
+  },
+  "devDependencies": {
+    "@babel/preset-flow": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "2.0.0-alpha.20",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "flow-bin": "^0.102.0",
+    "prettier": "^1.18.2",
+    "react-window": "^1.8.3",
+    "standard": "^12.0.1",
+    "webpack-cli": "^3.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/As1aNH4wK/Virtualizing-list-in-virtual-DOM.git"
+  }
+}
