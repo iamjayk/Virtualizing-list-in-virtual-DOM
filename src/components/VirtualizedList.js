@@ -8,6 +8,10 @@ const Row = ({ index, style, data, isScrolling }): Element<*> => {
 		fontFamily: 'monospace',
 		display: 'flex',
 		alignItems: 'center',
+		justifyContent: 'space-evenly',
+		border: 'solid tomato 1px',
+		width: 'calc(100vw - 32px)',
+		boxShadow: '3px 7px 5px 0px tomato'
 	};
 	const imgStyle = { borderRadius: '25px' };
 	return (
@@ -43,7 +47,8 @@ export default class VirtualizedList extends Component<any, any> {
 		.then(res => res.json())
 		.then(res => res.results)
 		.then(res => {
-			const items = res.map(x => ({ id: x.id, name: x.name, image: x.image }));
+			const itemMapper = x => ({ id: x.id, name: x.name, image: x.image });
+			const items = res.map(itemMapper);
 			console.log(items);
 			this.setState({ items });
 		});
@@ -52,11 +57,11 @@ export default class VirtualizedList extends Component<any, any> {
 	render (): Element<*> {
 		return (
 			<List
-				height={300}
+				height={812}
 				itemCount={this.state.items.length}
 				itemSize={130}
 				itemData={this.state.items}
-				width={300}
+				width={375}
 				useIsScrolling
 			>
 				{Row}
