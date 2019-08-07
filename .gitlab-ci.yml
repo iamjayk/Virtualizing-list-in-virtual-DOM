@@ -1,0 +1,24 @@
+image: node:alpine
+
+variables:
+  PUBLIC_URL: /virtualized-list
+
+cache:
+  paths:
+    - node_modules
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build --prod
+    - mv public _public
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+    only:
+      - master
