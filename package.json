@@ -19,7 +19,7 @@
     "http-server": "^0.12.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "webpack": "^4.35.0",
+    "webpack": "^5.11.0",
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
