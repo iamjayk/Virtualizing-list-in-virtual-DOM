@@ -19,7 +19,7 @@
     "http-server": "^0.12.3",
     "react": "^17.0.2",
     "react-dom": "^16.8.6",
-    "webpack": "^5.36.1",
+    "webpack": "5.69.0",
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
@@ -42,9 +42,8 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "2.0.0-alpha.20",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^3.0.0",
-    "flow-bin": "^0.150.0",
     "css-loader": "^5.2.4",
+    "flow-bin": "^0.150.0",
     "file-loader": "^6.0.0",
     "prettier": "^2.0.5",
     "react-window": "^1.8.3",
