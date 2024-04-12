@@ -42,7 +42,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "2.0.0-alpha.20",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^5.2.4",
+    "css-loader": "^7.1.1",
     "flow-bin": "^0.150.0",
     "file-loader": "^6.0.0",
     "prettier": "^2.0.5",
