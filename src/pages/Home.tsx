@@ -139,9 +139,8 @@ export default function Home() {
           {/* List */}
           <section id="characters">
             <VirtualizedList
-              filter={{ name: debouncedQuery, status }}
+              filter={{ name: debouncedQuery, status: status || undefined }}
               sort={sort}
-              isDebouncing={isDebouncing}
             />
           </section>
         </div>
