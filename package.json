@@ -19,7 +19,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist -u \"github-actions[bot] <github-actions[bot]@users.noreply.github.com>\""
   },
   "author": {
     "name": "Ajay K",
