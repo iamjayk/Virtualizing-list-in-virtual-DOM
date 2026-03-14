@@ -39,6 +39,7 @@ const routeTree = rootRoute.addChildren([homeRoute, characterDetailRoute]);
 const router = createRouter({
   routeTree,
   defaultPreload: "intent",
+  basepath: "/Virtualizing-list-in-virtual-DOM/",
 });
 
 // Export the provider for use in App.tsx
