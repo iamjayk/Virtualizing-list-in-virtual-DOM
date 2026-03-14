@@ -277,7 +277,6 @@ import { VirtualizedList } from '../../components/VirtualizedList';
 ## CI/CD
 
 - GitHub Actions workflows are in `.github/workflows/`.
-- GitLab CI config is in `.gitlab-ci.yml` at the root.
 - Do not commit directly to `main` — use feature branches and PRs.
 
 ---

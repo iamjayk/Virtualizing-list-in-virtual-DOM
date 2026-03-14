@@ -2,7 +2,7 @@
   "name": "virtualized-list",
   "version": "0.0.1",
   "description": "A virtualized list component in React virtual dom. Based on Brian vaughn's react-window.",
-  "main": "src/index.ts",
+  "main": "index.html",
   "license": "MIT",
   "dependencies": {
     "@apollo/client": "^4.1.6",
