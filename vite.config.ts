@@ -3,6 +3,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/Virtualizing-list-in-virtual-DOM/",
+  base: "/",
   plugins: [react(), tailwindcss()],
 });
