@@ -2,56 +2,48 @@
   "name": "virtualized-list",
   "version": "0.0.1",
   "description": "A virtualized list component in React virtual dom. Based on Brian vaughn's react-window.",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "license": "MIT",
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
   "dependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "7.24.0",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "html-webpack-plugin": "^5.6.0",
-    "http-server": "^0.12.3",
-    "react": "^17.0.2",
-    "react-dom": "^16.8.6",
-    "webpack": "5.91.0",
-    "webpack-dev-server": "5.0.2"
+    "@apollo/client": "^4.1.6",
+    "@tanstack/react-router": "^1.167.0",
+    "@tanstack/router": "0.0.1-beta.174",
+    "classnames": "^2.5.1",
+    "graphql": "^16.13.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "rxjs": "^7.8.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack",
-    "serve": "http-server ./dist"
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "author": {
-    "name": "as1anh4wk",
+    "name": "Ajay K",
     "email": "ajay8293@gmail.com"
   },
   "devDependencies": {
-    "@babel/preset-flow": "^7.0.0",
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "2.0.0-alpha.20",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^6.10.0",
-    "flow-bin": "^0.150.0",
-    "file-loader": "^6.0.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "postcss": "^8.5.8",
     "prettier": "^2.0.5",
-    "react-window": "^1.8.3",
-    "standard": "^17.1.0",
-    "webpack-cli": "^4.6.0"
+    "react-window": "^2.2.7",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vite": "^8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/As1aNH4wK/Virtualizing-list-in-virtual-DOM.git"
+    "url": "https://github.com/iamjayk/Virtualizing-list-in-virtual-DOM.git"
   }
 }
