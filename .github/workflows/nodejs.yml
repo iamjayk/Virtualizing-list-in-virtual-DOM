@@ -22,5 +22,6 @@ jobs:
           pnpm install
           pnpm build
           cp dist/index.html dist/404.html
+        working-directory: ${{ github.workspace }}
         env:
           CI: true
