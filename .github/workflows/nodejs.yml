@@ -22,6 +22,16 @@ jobs:
           pnpm install
           pnpm build
           cp dist/index.html dist/404.html
-          pnpm run deploy
         env:
           CI: true
+
+      - name: Set Git user
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Deploy to GitHub Pages
+        run: pnpm run deploy
+        env:
+          CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
