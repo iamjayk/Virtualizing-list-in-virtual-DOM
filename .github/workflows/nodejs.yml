@@ -21,5 +21,7 @@ jobs:
           npm install -g pnpm
           pnpm install
           pnpm build
+          cp dist/index.html dist/404.html
+          pnpm run deploy
         env:
           CI: true
